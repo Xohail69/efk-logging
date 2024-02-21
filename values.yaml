@@ -1,0 +1,14 @@
+# values.yaml
+
+elasticsearch:
+  nodeGroup: "master"
+  replicas: 2
+
+fluentd:
+  elasticsearch:
+    host: "elasticsearch-master"
+    port: 9200
+
+kibana:
+  elasticsearchHosts: "http://elasticsearch-master:9200"
+
